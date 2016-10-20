@@ -1,0 +1,954 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="wordpress," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="### 
+wordpress,php加速：首页静态化超强提高速度 生成html
+
+1、新建一个名为index_html.php的文件并加入一下代码：
+
+&amp;lt;span style=&amp;quot;font-weight:normal;line-height:1.7;text-indent:2em;&amp;quot;&amp;gt;
+ 
+&amp;lt;div class=&amp;quot;line number1 index0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wordpress,php加速：首页静态化超强提高速度">
+<meta property="og:url" content="http://yoursite.com/2015/06/03/wordpress-php加速：首页静态化超强提高速度/index.html">
+<meta property="og:site_name" content="好老师学习机资料下载">
+<meta property="og:description" content="### 
+wordpress,php加速：首页静态化超强提高速度 生成html
+
+1、新建一个名为index_html.php的文件并加入一下代码：
+
+&amp;lt;span style=&amp;quot;font-weight:normal;line-height:1.7;text-indent:2em;&amp;quot;&amp;gt;
+ 
+&amp;lt;div class=&amp;quot;line number1 index0">
+<meta property="og:updated_time" content="2016-10-20T03:53:17.537Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="wordpress,php加速：首页静态化超强提高速度">
+<meta name="twitter:description" content="### 
+wordpress,php加速：首页静态化超强提高速度 生成html
+
+1、新建一个名为index_html.php的文件并加入一下代码：
+
+&amp;lt;span style=&amp;quot;font-weight:normal;line-height:1.7;text-indent:2em;&amp;quot;&amp;gt;
+ 
+&amp;lt;div class=&amp;quot;line number1 index0">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> wordpress,php加速：首页静态化超强提高速度 | 好老师学习机资料下载 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">好老师学习机资料下载</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                wordpress,php加速：首页静态化超强提高速度
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-06-03T22:35:11+08:00" content="2015-06-03">
+              2015-06-03
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/代码项目/" itemprop="url" rel="index">
+                    <span itemprop="name">代码项目</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/06/03/wordpress-php加速：首页静态化超强提高速度/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/06/03/wordpress-php加速：首页静态化超强提高速度/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>### </p>
+<pre><code>wordpress,php加速：首页静态化超强提高速度 生成html
+
+1、新建一个名为index_html.php的文件并加入一下代码：
+
+&lt;span style=&quot;font-weight:normal;line-height:1.7;text-indent:2em;&quot;&gt;
+</code></pre><p> </p>
+<pre><code>&lt;div class=&quot;line number1 index0 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;lt;?php` 
+&lt;/div&gt;
+&lt;div class=&quot;line number2 index1 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `$baseCmsUrl`&amp;nbsp;`=&amp;nbsp;``&quot;http://hao.liufu.cc&quot;``;&amp;nbsp;&amp;nbsp; //你网站的根目录不要加反斜杠/` 
+&lt;/div&gt;
+&lt;div class=&quot;line number3 index2 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `$dmPageName`&amp;nbsp;`=&amp;nbsp;``&quot;index.php&quot;``;` 
+&lt;/div&gt;
+&lt;div class=&quot;line number4 index3 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `$stPageName`&amp;nbsp;`=&amp;nbsp;``&quot;index.html&quot;``;` 
+&lt;/div&gt;
+&lt;div class=&quot;line number5 index4 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `$tureStFile`&amp;nbsp;`= dirname(``__FILE__``).``’/’``.``$stPageName``;` 
+&lt;/div&gt;
+&lt;div class=&quot;line number6 index5 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `{` 
+&lt;/div&gt;
+&lt;div class=&quot;line number7 index6 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``$body`&amp;nbsp;`=&amp;nbsp;``file_get_contents``(``$baseCmsUrl``.``’/’``.``$dmPageName``);` 
+&lt;/div&gt;
+&lt;div class=&quot;line number8 index7 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``$fp`&amp;nbsp;`=&amp;nbsp;``fopen``(``$tureStFile``,&amp;nbsp;``’w’``);` 
+&lt;/div&gt;
+&lt;div class=&quot;line number9 index8 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``fwrite(``$fp``,&amp;nbsp;``$body``);` 
+&lt;/div&gt;
+&lt;div class=&quot;line number10 index9 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``fclose(``$fp``);` 
+&lt;/div&gt;
+&lt;div class=&quot;line number11 index10 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `}` 
+&lt;/div&gt;
+&lt;div class=&quot;line number12 index11 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `header(``&quot;Location:$baseCmsUrl/index.html&quot;``);&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``//生成后返回静态首页` 
+&lt;/div&gt;
+&lt;div class=&quot;line number13 index12 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:36px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `?&amp;gt;` 
+&lt;/div&gt;
+
+    &lt;span style=&quot;font-weight:normal;text-indent:2em;&quot;&gt;生成index.html文件后，我们要注意的是我们直接访问自己的域名和访问域名+index.html都会显示首页这样的会搜索引擎会认为你在制造重复页面，会给网站带来一定的负面影响，下面小V给出解决此问题的方法（访问index.html301转跳到/，即去除掉首页url中的index.html）：&lt;/span&gt;&lt;span style=&quot;font-size:small;font-family:Microsoft Yahei, Tahoma, Verdana, 宋体;&quot;&gt;&lt;span style=&quot;line-height:1.7;background-color:#ffffff;&quot;&gt;将文件上传到网站根目录后直接打开浏览器访问该文件即可为wordpress首页生成html。&lt;/span&gt;&lt;/span&gt; 
+
+    apache下的解决方法：
+
+&lt;div class=&quot;line number1 index0 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `RewriteEngine On&amp;nbsp;` 
+&lt;/div&gt;
+&lt;div class=&quot;line number2 index1 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `RewriteBase /&amp;nbsp;` 
+&lt;/div&gt;
+&lt;div class=&quot;line number3 index2 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}&amp;nbsp;``/index``.(php|html|htm) HTTP/&amp;nbsp;` 
+&lt;/div&gt;
+&lt;div class=&quot;line number4 index3 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `RewriteRule ^index.(php|html|htm)$ http:``//www``.v7v3.com/ [R=301,L]` 
+&lt;/div&gt;
+
+    nginx下的解决方法
+
+    ** ** 
+
+&lt;div class=&quot;line number1 index0 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    **`location / {` ** 
+&lt;/div&gt;
+&lt;div class=&quot;line number2 index1 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    **`&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``if`&amp;nbsp;`(!-e $request_filename){` ** 
+&lt;/div&gt;
+&lt;div class=&quot;line number3 index2 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    **`&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``rewrite ^/(.*)$&amp;nbsp;``/index``.html/$1 last;` ** 
+&lt;/div&gt;
+&lt;div class=&quot;line number4 index3 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    **`&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``}` ** 
+&lt;/div&gt;
+&lt;div class=&quot;line number5 index4 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    **`}` ** 
+&lt;/div&gt;
+</code></pre><p>**</p>
+<p>2014年1月15日更新**apache下只要将代码加到.htaccess文件最上面即可，域名替换成你自己的域名，至于nginx，小V就不多说了，既然你都用上了nginx那么这点问题应该还是懂的。</p>
+<pre><code>    解决index_html.php文件只能执行一次的问题。（PS：群里有位小伙伴使用了小V的静态化首页的方法加速首页，但是发现index_html.php文件只能生成一次index.html文件，第二次执行后index.html文件无变化，只有登录FTP删除了之后再次生成才有用。）使用改良后的代码即可解决此问题，代码如下：
+
+&lt;div class=&quot;line number1 index0 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;lt;?php` 
+&lt;/div&gt;
+&lt;div class=&quot;line number2 index1 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `if``(``file_exists``(``&quot;index.html&quot;``))` 
+&lt;/div&gt;
+&lt;div class=&quot;line number3 index2 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;nbsp;``{` 
+&lt;/div&gt;
+&lt;div class=&quot;line number4 index3 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `unlink(``&quot;index.html&quot;``);` 
+&lt;/div&gt;
+&lt;div class=&quot;line number5 index4 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;nbsp;``}` 
+&lt;/div&gt;
+&lt;div class=&quot;line number6 index5 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `$baseCmsUrl`&amp;nbsp;`=&amp;nbsp;``&quot;http://www.v7v3.com&quot;``;` 
+&lt;/div&gt;
+&lt;div class=&quot;line number7 index6 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `$dmPageName`&amp;nbsp;`=&amp;nbsp;``&quot;index.php&quot;``;` 
+&lt;/div&gt;
+&lt;div class=&quot;line number8 index7 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `$stPageName`&amp;nbsp;`=&amp;nbsp;``&quot;index.html&quot;``;` 
+&lt;/div&gt;
+&lt;div class=&quot;line number9 index8 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `$tureStFile`&amp;nbsp;`= dirname(``__FILE__``).``’/’``.``$stPageName``;` 
+&lt;/div&gt;
+&lt;div class=&quot;line number10 index9 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `{` 
+&lt;/div&gt;
+&lt;div class=&quot;line number11 index10 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``$body`&amp;nbsp;`=&amp;nbsp;``file_get_contents``(``$baseCmsUrl``.``’/’``.``$dmPageName``);` 
+&lt;/div&gt;
+&lt;div class=&quot;line number12 index11 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``$fp`&amp;nbsp;`=&amp;nbsp;``fopen``(``$tureStFile``,&amp;nbsp;``’w’``);` 
+&lt;/div&gt;
+&lt;div class=&quot;line number13 index12 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``fwrite(``$fp``,&amp;nbsp;``$body``);` 
+&lt;/div&gt;
+&lt;div class=&quot;line number14 index13 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;``fclose(``$fp``);` 
+&lt;/div&gt;
+&lt;div class=&quot;line number15 index14 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `}` 
+&lt;/div&gt;
+&lt;div class=&quot;line number16 index15 alt1&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `header(``&quot;Location:$baseCmsUrl/index.html&quot;``);` 
+&lt;/div&gt;
+&lt;div class=&quot;line number17 index16 alt2&quot; style=&quot;box-sizing:content-box !important;font-size:13px;border-top:0px;font-family:Monaco, Menlo, Consolas, ’Courier New’, monospace;border-right:0px;vertical-align:baseline !important;right:auto !important;border-bottom:0px;position:static !important;float:none !important;color:#333333;outline-width:0px !important;padding-bottom:0px !important;padding-top:0px !important;outline-style:none !important;padding-left:1em !important;left:auto !important;margin:0px;border-left:0px;outline-color:invert !important;line-height:1.1em !important;top:auto !important;padding-right:1em !important;bottom:auto !important;background-color:#ffffff;text-indent:28px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;&quot;&gt;
+    `?&amp;gt;` 
+&lt;/div&gt;
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/wordpress/" rel="tag">#wordpress</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/05/30/SoftEther VPN Client 真正免费的VPN软件  最新版/" rel="next" title="SoftEther VPN Client 真正免费的VPN软件  最新版">
+                <i class="fa fa-chevron-left"></i> SoftEther VPN Client 真正免费的VPN软件  最新版
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/06/11/Windows-8-1-简体中文MSDN正式版-安装序列号-完美激活/" rel="prev" title="Windows 8.1 简体中文MSDN正式版+安装序列号+完美激活">
+                Windows 8.1 简体中文MSDN正式版+安装序列号+完美激活 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/06/03/wordpress-php加速：首页静态化超强提高速度/"
+           data-title="wordpress,php加速：首页静态化超强提高速度" data-url="http://yoursite.com/2015/06/03/wordpress-php加速：首页静态化超强提高速度/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="John Doe" />
+          <p class="site-author-name" itemprop="name">John Doe</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">89</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">48</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"bddsofts"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+
+</body>
+</html>
