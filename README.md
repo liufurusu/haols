@@ -1,2 +1,4 @@
 # haols
-冰冻软件
+bddsofts 所有文件，
+
+http://haols.liufu.cc
